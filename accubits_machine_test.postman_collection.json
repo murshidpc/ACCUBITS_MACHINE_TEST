@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "c0a9c7ed-96b0-437e-b9c2-fe156488144b",
+		"name": "accubits_machine_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/user/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGI2OGY2ODc1ZWE2MzAwMTIwY2RlMmEiLCJlbWFpbCI6ImFydW53aWxzb25AbWFpbGluYXRvci5jb20iLCJwZXJtaXNzaW9uTGV2ZWwiOjIwNDksInByb3ZpZGVyIjoiZW1haWwiLCJuYW1lIjoiQXJ1biBXaWxzb24iLCJyZWZyZXNoS2V5IjoicXVJMTREbDdGb2FuSU9BVXVlbXRjZz09IiwiaWF0IjoxNTcyODUzNjI3fQ.MPQ1ronHtgWzjAy7_wXU7q9ncgBNA6QDsrjLDjJFW-Y",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"murshi\",\n\"email\":\"murshidpc@gmail.com\",\n\"password\":\"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"signup"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/user/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZmU0YjAwMjIyN2NmMjRiYTRlYjIzODEiLCJpYXQiOjE2MDg4MzE0MjEsImV4cCI6MTYwODgzNTAyMX0.HvcgXbQ_UMTzDlXX5vSNWtc3WNekhQWQS_m7CZi-yPs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"murshidpc@gmail.com\",\n\"password\":\"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/user/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZmU0YjAwMjIyN2NmMjRiYTRlYjIzODEiLCJpYXQiOjE2MDg4MzE0MjEsImV4cCI6MTYwODgzNTAyMX0.HvcgXbQ_UMTzDlXX5vSNWtc3WNekhQWQS_m7CZi-yPs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"murshidpc@gmail.com\",\n\"password\":\"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
